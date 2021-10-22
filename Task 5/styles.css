@@ -1,0 +1,32 @@
+a:hover, a:visited:hover {
+    color: blue;
+}
+a:visited {
+    color: green;
+}
+
+.cv-title {
+    display: inline-block;
+}
+
+.header-links {
+    display: inline-block;
+    text-align: end;
+    position: absolute; 
+    right: 20px;
+}
+
+.title {
+    display: inline-block;
+    width: 20%;
+}
+
+.description {
+    display: inline-block;
+    width: 80%;
+    margin-right: -5%;
+}
+
+.footer {
+    text-align: center;
+}
