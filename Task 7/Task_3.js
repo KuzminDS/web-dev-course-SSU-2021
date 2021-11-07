@@ -26,35 +26,18 @@ function factorial(n) {
 }
 
 function getVariables(n, i) {
-	var j = n - i
-	var partA = ""
-	var partB = ""
-    
-    switch(i) {
-        case 0:
-            partA = ""
-            break
-        case 1:
-            partA = "a"
-            break
-        default:
-            partA = `a^${i}`
-            break
-    }
+    return getVariable("a", i).toString() + getVariable("b", n - i).toString()
+}
 
-    switch(j) {
+function getVariable(name, degree) {
+    switch(degree) {
         case 0:
-            partB = ""
-            break
+            return ""
         case 1:
-            partB = "b"
-            break
+            return `${name}`
         default:
-            partB = `b^${j}`
-            break
+            return `${name}^${degree}`
     }
-
-	return partA + partB
 }
 
 console.log(getFormula(0))
