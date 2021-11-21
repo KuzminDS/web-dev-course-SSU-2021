@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 9</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="getFormulaScript.js"></script>
+    <script src="getVowelsCountScript.js"></script>
+    <script src="eliminationScript.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Get formula</h1>
+        <form>
+            <input type="number" placeholder="Enter degree" id="getFormulaInput"/>
+            <input type="button" value="Reset" onclick="resetInputFormulaField()"></input>
+            <input type="button" value="Get formula" onclick="startGetFormula()"></input>
+            <h3>Result:</h3>
+            <div id="getFormulaResult"></div>
+        </form>
+    </div>
+
+    <div>
+        <h1>Get vowels count</h1>
+        <form>
+            <input type="text" placeholder="Enter word" id="getVowelsInput"/>
+            <input type="button" value="Reset" onclick="resetVowelsField()"></input>
+            <input type="button" value="Get vowels count" onclick="getVowels()"></input>
+            <h3>Result:</h3>
+            <div id="getVowelsResult"></div>
+        </form>
+    </div>
+
+    <div>
+        <h1>Elimination game</h1>
+        <form>
+            <input type="number" placeholder="Enter player number" id="getEliminationInputN"/>
+            <input type="number" placeholder="Enter step" id="getEliminationInputStep"/>
+            <input type="button" value="Reset" onclick="resetEliminationFields()"></input>
+            <input type="button" value="Start game" onclick="getElimination()"></input>
+            <h3>Result:</h3>
+            <div id="getEliminationResult"></div>
+        </form>
+    </div>
+</body>
+
+</html>
